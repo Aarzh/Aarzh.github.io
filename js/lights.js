@@ -6,23 +6,23 @@ function lights()
 {
     var spotLights = [];
 
-    spotLight = new THREE.SpotLight (0x00fa00);
-    spotLight.position.set(40, 70, -10);
+    // spotLight = new THREE.SpotLight (0xffffff);
+    // spotLight.position.set(0, 15, -10);
+    // spotLight.target.position.set(-2, 0, -2);
+    // spotLights.push(spotLight);
+    // root.add(spotLight);
+
+    spotLight = new THREE.SpotLight (0xffffff);
+    spotLight.position.set(0, 555, 400);
     spotLight.target.position.set(-2, 0, -2);
     spotLights.push(spotLight);
     root.add(spotLight);
 
-    spotLight = new THREE.SpotLight (0x5500ff);
-    spotLight.position.set(0, 70, -40);
-    spotLight.target.position.set(-2, 0, -2);
-    spotLights.push(spotLight);
-    root.add(spotLight);
-
-    spotLight = new THREE.SpotLight (0xfaf600);
-    spotLight.position.set(0, 70, 40);
-    spotLight.target.position.set(-2, 0, -2);
-    spotLights.push(spotLight);
-    root.add(spotLight);
+    // spotLight = new THREE.SpotLight (0xffffff);
+    // spotLight.position.set(0, 15, 40);
+    // spotLight.target.position.set(-2, 0, -2);
+    // spotLights.push(spotLight);
+    // root.add(spotLight);
 
     for(var sp of spotLights)
     {

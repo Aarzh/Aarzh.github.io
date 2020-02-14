@@ -125,6 +125,27 @@ function createScene(canvas) {
     ground.castShadow = false;
     ground.receiveShadow = true;
 
+    // Create a texture map
+    var map1 = new THREE.TextureLoader().load("../images/wall.jpg");
+    map1.wrapS = map1.wrapT = THREE.RepeatWrapping;
+    map1.repeat.set(8, 8);
+
+    var color = 0xffffff;
+
+    // Put in a ground plane to show off the lighting
+    geometry = new THREE.PlaneGeometry(200, 100, 50, 50);
+    wall = new THREE.Mesh(geometry, new THREE.MeshPhongMaterial({color:color, map:map1, side:THREE.DoubleSide}));
+
+    wall.rotation.x = Math.PI;
+    wall.rotation.y = Math.PI;
+    wall.position.y = +46;
+    wall.position.z = -100;
+
+    // Add the mesh to our group
+    group.add( wall );
+    wall.castShadow = false;
+    wall.receiveShadow = true;
+
     // Now add the group to our scene
     scene.add( root );
 }
