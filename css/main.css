@@ -25,17 +25,33 @@ body {
 
 .box{
 	margin-top: 2%;
-	border: 2px solid white;
+	border: solid white;
 	height: 190px;
 	width: 100%;
   position: relative;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  transform: rotate(-2deg);
 }
 
 .boxAdd{
 	margin-top: 2%;
-	border: 2px solid white;
+	border: solid white;
 	height: 190px;
-	width: 100%;
+  width: 100%;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  transform: rotate(-2deg);
+}
+
+#add_scene > span {
+  color: white;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .box, .boxAdd {
