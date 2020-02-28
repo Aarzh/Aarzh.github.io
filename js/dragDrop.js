@@ -33,7 +33,7 @@ function dragAndDrop(){
         startColor = event.object.material.color.getHex();
         event.object.material.color.setHex(0xf5163f);
         console.log("DRAG START");
-        console.log(event.object.children[0]);
+        console.log(event.object.children[0].position);
       }
     }
     function dragCallback(event){
@@ -52,7 +52,7 @@ function dragAndDrop(){
         var pos = event.object.position;
         updateAllPositions()
         console.log("DRAG END");
-        console.log(event.object.children[0]);
+        console.log(event.object.children[0].position);
       }
     }
 }
