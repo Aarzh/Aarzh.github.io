@@ -33,7 +33,7 @@ function dragAndDrop(){
         startColor = event.object.material.color.getHex();
         event.object.material.color.setHex(0xf5163f);
         console.log("DRAG START");
-        console.log(event.object.children[0].position);
+        console.log(event.object.children);
       }
     }
     function dragCallback(event){
@@ -52,7 +52,11 @@ function dragAndDrop(){
         var pos = event.object.position;
         updateAllPositions()
         console.log("DRAG END");
-        console.log(event.object.children[0].position);
+        if(event.object.type == "Sprite"){
+          event.object.position.x = 0;
+          event.object.position.y = 0;
+          event.object.position.z = -5;
+        }
       }
     }
 }
