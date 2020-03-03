@@ -132,6 +132,8 @@ body {
 #music_controls {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
 }
 
 #music_set_time {
