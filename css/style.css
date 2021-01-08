@@ -6171,6 +6171,11 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 1.5rem !important; }
+
+.mb-4 > p{
+  color: rgba(0, 0, 0, 0.5);
   margin-bottom: 1.5rem !important; }
 
 .ml-4,
@@ -7298,10 +7303,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #f05d23; }
+  color: #00aaff; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #f05d23;
+    color: #006699 !important;
     outline: none !important; }
 
 h1, h2, h3, h4, h5,
@@ -7590,14 +7595,14 @@ h1, h2, h3, h4, h5,
       border-radius: 50%; }
     .hero-wrap .text .subheading {
       font-size: 24px;
-      color: #bfbfbf;
+      color: rgba(0, 0, 0, 0.6);
       font-weight: 300; }
     .hero-wrap .text h1 {
       letter-spacing: 1px;
       font-weight: 900; }
     .hero-wrap .text .btn-custom {
       font-weight: 400;
-      color: #b3b3b3;
+      color: #00aaff;
       border-bottom: 2px solid #b3b3b3; }
 
 .photography-entry {
